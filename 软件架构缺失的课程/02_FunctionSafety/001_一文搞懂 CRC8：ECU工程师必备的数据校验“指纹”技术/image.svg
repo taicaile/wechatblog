@@ -1,0 +1,49 @@
+<svg width="900" height="383" viewBox="0 0 900 383" xmlns="http://www.w3.org/2000/svg" font-family="Arial, 'Microsoft Yahei', sans-serif">
+  <!-- 定义背景、样式和图标 -->
+  <defs>
+    <radialGradient id="backgroundGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </radialGradient>
+    <style>
+      .title { font-size: 64px; font-weight: bold; fill: #ffffff; text-anchor: middle; letter-spacing: 2px; }
+      .subtitle { font-size: 22px; fill: #a0aec0; text-anchor: middle; }
+      .shield-main { fill: #1a202c; stroke: #4fd1c5; stroke-width: 4; filter: drop-shadow(0 0 10px #4fd1c5); }
+      .fingerprint { fill: none; stroke: #4fd1c5; stroke-width: 5; stroke-linecap: round; stroke-opacity: 0.8; }
+      .binary-stream { font-family: 'Courier New', monospace; font-size: 14px; fill: #2d3748; opacity: 0.7; user-select: none; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="url(#backgroundGlow)" />
+
+  <!-- 背景中的二进制码装饰 (彩蛋) -->
+  <text x="50" y="100" class="binary-stream">01100011 01110010 01100011</text>
+  <text x="700" y="300" class="binary-stream">100011101 00110001</text>
+  <text x="100" y="350" class="binary-stream">01010101 01000100 01010011</text>
+  <text x="750" y="80" class="binary-stream">01001100 01001001 01001110</text>
+  <text x="40" y="200" class="binary-stream">01000001 01010101 01010100 01001111 01010011 01000001 01010010</text>
+  <text x="720" y="180" class="binary-stream">01000101 01000011 01010101</text>
+
+  <!-- 中央的安全盾牌和指纹图标 -->
+  <g transform="translate(450, 191.5)">
+    <!-- 盾牌形状 -->
+    <path class="shield-main" d="M 0 -150 L 130 -100 L 130 50 Q 130 130 0 150 Q -130 130 -130 50 L -130 -100 Z" />
+
+    <!-- 指纹形状 -->
+    <g class="fingerprint" transform="scale(1.1)">
+        <path d="M 0, -55 Q 15, -55 15, -40 T 0, -25 T -15, -40 T 0, -55" />
+        <path d="M -25, -15 Q 0, -15 25, -15" />
+        <path d="M -35, 5 Q 0, 5 35, 5" />
+        <path d="M -40, 25 Q 0, 25 40, 25" />
+        <path d="M -45, 45 Q -20, 50 0, 60 Q 20, 50 45, 45" />
+        <path d="M -8, -60 Q 0, -70 8, -60" />
+        <path d="M -30, -50 Q 0, -75 30, -50" />
+    </g>
+  </g>
+
+  <!-- 标题和副标题 -->
+  <text x="450" y="180" class="title">一文搞懂 CRC8</text>
+  <text x="450" y="235" class="subtitle">ECU工程师必备的数据校验“指纹”技术</text>
+
+</svg>
